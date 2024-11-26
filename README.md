@@ -94,7 +94,7 @@ import requests
 import json
 
 # URL do endpoint
-url = "https://your-endpoint-url"
+url = "[https://your-endpoint-url]"
 
 # Dados de teste
 data = {"data": [{"feature1": value1, "feature2": value2}]}
