@@ -1,0 +1,32 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.20
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 1.5.1
+metadata:
+  azureml.base_image: mcr.microsoft.com/azureml/curated/ai-ml-automl:7
+  azureml.engine: automl
+mlflow_version: 2.9.2
+model_size_bytes: 267872
+model_uuid: d4479cc57a75424ca401f5d8703bf5ba
+run_id: heroic_pencil_l8kgwnbqfy_2
+signature:
+  inputs: '[{"type": "integer", "name": "day"}, {"type": "integer", "name": "mnth"},
+    {"type": "integer", "name": "year"}, {"type": "integer", "name": "season"}, {"type":
+    "boolean", "name": "holiday"}, {"type": "integer", "name": "weekday"}, {"type":
+    "boolean", "name": "workingday"}, {"type": "integer", "name": "weathersit"}, {"type":
+    "float", "name": "temp"}, {"type": "float", "name": "atemp"}, {"type": "float",
+    "name": "hum"}, {"type": "float", "name": "windspeed"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-11-26 17:41:24.570617'
