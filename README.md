@@ -3,7 +3,6 @@
 
 ------------------------------------------------------------------------------------------------
 
-```markdown
 ## Passo a Passo do Laboratório de Aprendizado de Máquina do Azure
 
 ### 1. Introdução ao Laboratório
